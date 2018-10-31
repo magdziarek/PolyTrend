@@ -1,6 +1,4 @@
-PolyTrend is a change detection algorithm developed by Dr Sadegh Jamali at Lund University. It works on pixel-level time-series and classifies trends in vegetation into linear, quadratic, cubic, concealed and no-trend types. Here it makes use of an external repository of satellite images through Google Earth Engine's API. The output is a csv file with pixel coordinates (WGS 1984, EPSG: 4326), trend type, statistical significance of the fit of the polynomial and slope of linear polynomial. Maps with a limited number of pixels can be created in the Jupyter Notebook.
-
-To know more about the algorithm read: PolyTrend: Jamali, S.; Seaquist, J.; Eklundh, L.; Ardö, J. (2014): Automated mapping of vegetation trends with polynomials using NDVI imagery over the Sahel. In Remote Sensing of Environment 141, pp. 79–89. DOI: 10.1016/j.rse.2013.10.019
+PolyTrend is a trend detection algorithm (Jamali et al, 2014). It works on pixel-level time-series and classifies trends in vegetation into linear, quadratic, cubic, concealed and no-trend types. Here it makes use of an external repository of satellite images through Google Earth Engine's API. The output is a csv file with pixel coordinates (WGS 1984, EPSG: 4326), trend type, statistical significance of the fit of the polynomial and slope of linear polynomial. Maps with a limited number of pixels can be created in the Jupyter Notebook.
 
 To use the scripts here you will need to install Anaconda and Jupyter Notebook first (see SettingUpJupyterNotebook.pdf) and download a relevant script. 
 
@@ -12,3 +10,6 @@ If you prefer to use your own data, the algorithm is also available in:
 - Matlab, 
 - as a package in RStudio: https://cran.r-project.org/web/packages/PolyTrend/index.html 
 - as a webtool: http://polytrend.gis.lu.se/
+
+References:
+Jamali, S., Seaquist, J., Eklundh, L., Ardö, J. (2014). Automated mapping of vegetation trends with polynomials using NDVI imagery over the Sahel. Remote Sensing of Environment, 141, 79–89. DOI: 10.1016/j.rse.2013.10.019. 
